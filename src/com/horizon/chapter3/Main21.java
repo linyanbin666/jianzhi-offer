@@ -6,7 +6,7 @@ package com.horizon.chapter3;
  */
 public class Main21 {
 
-    // 借助辅助数组，空间复杂度O(n)，时间复杂度O(n)
+    // 借助辅助数组，空间复杂度O(n)，时间复杂度O(n)，保证奇数和奇数，偶数和偶数之间的相对位置不变
     public void reOrderArray(int [] array) {
         int[] tempArr = new int[array.length];
         int index = 0;

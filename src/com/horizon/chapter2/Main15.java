@@ -15,6 +15,16 @@ import java.time.LocalDateTime;
  */
 public class Main15 {
 
+    public int numberOf1(int n) {
+        int flag = 1, count = 0;
+        while (flag != 0) {
+            if ((n & flag) == flag)
+                count++;
+            flag <<= 1;
+        }
+        return count;
+    }
+
     /*public int NumberOf1(int n) {
         int count = 0;
         while (n != 0) {
@@ -39,7 +49,8 @@ public class Main15 {
 
     @Test
     public void test() {
-        Assertions.assertEquals(3, NumberOf1(11));
+//        Assertions.assertEquals(3, NumberOf1(11));
+        Assertions.assertEquals(3, numberOf1(11));
     }
 
 }
